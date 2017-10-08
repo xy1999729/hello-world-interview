@@ -24,8 +24,8 @@ http.createServer( function (request, response) {
          // 响应文件内容
          response.write(data.toString());  
       }      
-        var name = document.getElementById(name).value;
-        var grade = document.getElementById(grade).value;
+        var name = document.getElementById(name);
+        var grade = document.getElementById(grade);
       // 判断并输出
     if (grade>=0 && grade<60){
     res.write(name + "不及格")
